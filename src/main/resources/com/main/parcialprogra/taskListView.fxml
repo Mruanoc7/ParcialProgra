@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="843.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.parcialprogra.TaskListController">
+   <children>
+      <BorderPane layoutX="-1.0" prefHeight="588.0" prefWidth="843.0">
+         <left>
+            <VBox prefHeight="400.0" prefWidth="133.0" style="-fx-background-color: #1D5D9B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="Añadir" mnemonicParsing="false" prefHeight="50.0" prefWidth="137.0" text="Añadir Tareas" />
+                  <Button fx:id="tasksButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="137.0" text="Tareas" />
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="27.0" prefWidth="600.0" style="-fx-background-color: #1D5D9B;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="105.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../../../Pictures/Escudo_de_la_universidad_Mariano_Gálvez_Guatemala.svg.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Parcial" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <ListView fx:id="Lista" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
